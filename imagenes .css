@@ -1,0 +1,660 @@
+/* CONTENEDOR 2 COLUMNAS */
+.layout-two-columns {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* COLUMNA IZQUIERDA: TÍTULO */
+.left-title {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.giant-title {
+    font-size: 70px;
+    line-height: 1;
+}
+
+/* COLUMNA DERECHA */
+.right-content {
+    width: 55%;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* POPUP VIDEO */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+}
+
+.close-video {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+header {
+    width: 100%;
+    padding: 20px 40px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+* {
+    box-sizing: border-box;
+}
+/* ===== SECCIÓN 3 COLUMNAS ===== */
+
+.three-columns-section {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Columna del título */
+.col-left {
+    width: 25%;
+}
+
+.title-column {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Columna del texto */
+.col-center {
+    width: 40%;
+}
+
+.col-center p {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Columna de la imagen */
+.col-right {
+    width: 35%;
+    
+}
+
+.nintendo-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .three-columns-section {
+        flex-direction: column;
+    }
+    .col-left,
+    .col-center,
+    .col-right {
+        width: 100%;
+    }
+}
+/* Barra naranja */
+.random-bar {
+    background-color: #ff7b00;
+    color: white;
+    padding: 18px 26px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.random-bar:hover {
+    background-color: #e86d00;
+}
+
+/* Resultado aleatorio */
+.console-result {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.console-result img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.console-result h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.console-result p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===== GALERÍA DE 4 IMÁGENES ===== */
+.four-images-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+    align-items: start;
+}
+
+.image-card {
+    text-align: center;
+    
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background: rgb(179, 177, 177);
+}
+
+.image-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .four-images-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .four-images-section {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== SECCIÓN CONSOLAS VENDIDAS ===== */
+
+.sold-consoles-section {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Columna izquierda */
+.left-sold {
+    width: 35%;
+}
+
+.sold-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sold-text {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Columna derecha: grid */
+.right-grid {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.console-box {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.console-box img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.console-box h4 {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.console-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .sold-consoles-section {
+        flex-direction: column;
+    }
+    .left-sold, .right-grid {
+        width: 100%;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+    background: #f7f7f7;
+    margin-top: 50px;
+}
+
+.footer-left h3 {
+    margin: 0;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* CONTENEDOR 2 COLUMNAS */
+.layout-two-columns {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* COLUMNA IZQUIERDA: TÍTULO */
+.left-title {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.giant-title {
+    font-size: 70px;
+    line-height: 1;
+}
+
+/* COLUMNA DERECHA */
+.right-content {
+    width: 55%;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* POPUP VIDEO */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+}
+
+.close-video {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+header {
+    width: 100%;
+    padding: 20px 40px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+* {
+    box-sizing: border-box;
+}
+/* ===== SECCIÓN 3 COLUMNAS ===== */
+
+.three-columns-section {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Columna del título */
+.col-left {
+    width: 25%;
+}
+
+.title-column {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Columna del texto */
+.col-center {
+    width: 40%;
+}
+
+.col-center p {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Columna de la imagen */
+.col-right {
+    width: 35%;
+    
+}
+
+.nintendo-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .three-columns-section {
+        flex-direction: column;
+    }
+    .col-left,
+    .col-center,
+    .col-right {
+        width: 100%;
+    }
+}
+/* Barra naranja */
+.random-bar {
+    background-color: #ff7b00;
+    color: white;
+    padding: 18px 26px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.random-bar:hover {
+    background-color: #e86d00;
+}
+
+/* Resultado aleatorio */
+.console-result {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.console-result img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.console-result h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.console-result p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===== GALERÍA DE 4 IMÁGENES ===== */
+.four-images-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+    align-items: start;
+}
+
+.image-card {
+    text-align: center;
+    
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background: rgb(179, 177, 177);
+}
+
+.image-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .four-images-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .four-images-section {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== SECCIÓN CONSOLAS VENDIDAS ===== */
+
+.sold-consoles-section {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Columna izquierda */
+.left-sold {
+    width: 35%;
+}
+
+.sold-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sold-text {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Columna derecha: grid */
+.right-grid {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.console-box {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.console-box img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.console-box h4 {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.console-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .sold-consoles-section {
+        flex-direction: column;
+    }
+    .left-sold, .right-grid {
+        width: 100%;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+    background: #f7f7f7;
+    margin-top: 50px;
+}
+
+.footer-left h3 {
+    margin: 0;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 40px;
+}
